@@ -25,7 +25,7 @@ app.get('/pokemons', (req, res) => {
 })
 app.get('/series', (req, res) => {
   console.log("Just got a request!")
-  res.send('Meu Nome é Lucas Pereira Esteves')
+  res.json([{name: "Breaking Bead"},{name: "The Walking Dead"},{name: "One Piece"}])
 })
 
 
