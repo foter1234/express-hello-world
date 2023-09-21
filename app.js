@@ -17,7 +17,8 @@ app.get('/meunome', (req, res) => {
 })
 app.get('/tico', (req, res) => {
   console.log("Just got a request!")
-  res.send('teco.html')
+  res.redirect('/teco');
+
 })
 app.get('/pokemons', (req, res) => {
   console.log("Just got a request!")
