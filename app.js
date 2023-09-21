@@ -11,6 +11,23 @@ app.get('/req', (req, res) => {
     console.log("Just got a request!")
     res.send('Yo!')
 })
+app.get('/meunome', (req, res) => {
+  console.log("Just got a request!")
+  res.send('Meu Nome é Lucas Pereira Esteves')
+})
+app.get('/tico', (req, res) => {
+  console.log("Just got a request!")
+  res.send('teco')
+})
+app.get('/pokemons', (req, res) => {
+  console.log("Just got a request!")
+  res.json([{name: "Pikachu"},{name: "Pikachu"},{name: "Butterfree"},{name: "Pidgeot"},{name: "Bulbasaur"},{name: "Charizard"},{name: "Squirtle"},{name:"Kingler"},{name:"Primeape"},{name:"Muk"}])
+})
+app.get('/series', (req, res) => {
+  console.log("Just got a request!")
+  res.send('Meu Nome é Lucas Pereira Esteves')
+})
+
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
