@@ -22,11 +22,12 @@ app.get('/tico', (req, res) => {
   console.log("Just got a request!")
   res.send('teco123')
 })
+
 app.get('/pokemons', (req, res) => {
   console.log("Just got a request!")
   res.json([{name: "Pikachu"},{name: "Pikachu"},{name: "Butterfree"},{name: "Pidgeot"},{name: "Bulbasaur"},{name: "Charizard"},{name: "Squirtle"},{name:"Kingler"},{name:"Primeape"},{name:"Muk"}])
 })
-app.get('/series', (req, res) => {
+app.post('/series', (req, res) => {
   console.log("Just got a request!")
   res.json([{name: "Breaking Bead"},{name: "The Walking Dead"},{name: "One Piece"}])
 })
@@ -85,3 +86,4 @@ const html = `
   </body>
 </html>
 `
+
