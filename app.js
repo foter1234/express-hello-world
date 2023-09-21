@@ -1,11 +1,14 @@
 const express = require("express");
 const app = express();
 const port = process.env.PORT || 3001;
-import ''
+
 app.use(express.json())
 app.use(express.urlencoded({extended: true}));
 
-app.get("/", (req, res) => res.type('html').send(html));
+app.get("/", (req, res) => 
+
+res.type('html').send(html)
+);
 
 app.get('/req', (req, res) => {
     console.log("Just got a request!")
@@ -17,8 +20,7 @@ app.get('/meunome', (req, res) => {
 })
 app.get('/tico', (req, res) => {
   console.log("Just got a request!")
-  res.redirect('/teco');
-
+  res.send('teco123')
 })
 app.get('/pokemons', (req, res) => {
   console.log("Just got a request!")
